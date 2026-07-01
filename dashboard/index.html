@@ -576,8 +576,8 @@ function renderHeat(){
       wk.appendChild(c); cur=addDays(cur,1);
     }
     g.appendChild(wk);
-    const mDate=addDays(wkFirst,3); const m=mDate.getMonth(); const span=document.createElement('div'); span.className='mlabel';
-    span.textContent=(m!==lastMonth)?mDate.toLocaleDateString('en',{month:'short'}):''; if(m!==lastMonth)lastMonth=m;
+    const m=wkFirst.getMonth(); const span=document.createElement('div'); span.className='mlabel';
+    span.textContent=(m!==lastMonth)?wkFirst.toLocaleDateString('en',{month:'short'}):''; if(m!==lastMonth)lastMonth=m;
     months.appendChild(span);
   }
 }
